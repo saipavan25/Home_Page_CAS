@@ -1,0 +1,74 @@
+﻿@model WebPage.Models.Class1
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link href="~/Content/w3.css" rel="stylesheet" />
+    <link href="~/Content/Finale/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>LOGIN</title>
+</head>
+<body>
+
+    <!--<form id="form1" runat="server"> -->
+    <div class="w3-container">
+
+        <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px">
+                <div class="w3-center">
+                    <br>
+                    <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-red w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
+                    <img src="~/Content/avatar2.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                </div>
+
+
+                <form class="w3-container" action="/action_page.php">
+                    From Shaik Fayaz to Everyone:  01:37 PM
+                    <div class="form-horizontal">
+                        <h4>UserLogin</h4>
+                        <hr />
+                        <div id="error">
+                            @ViewBag.ErrorMessage
+                        </div>
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Password, "", new
+                                {
+                                    @class
+
+
+
+
+
+                                <!-- <div class="w3-section">
+                      <label><b>Username</b></label>
+                      <input class="w3-input w3-border w3-center w3-large w3-round-large " type="text" placeholder="Enter Username" name="usrname" required>
+                      <label><b>    </b></label><br />
+                      <label><b>Password</b></label>
+                      <input class="w3-input w3-border w3-center w3-large w3-round-large" type="password" placeholder="Enter Password" name="psw" required>
+                      <button class="w3-button w3-block w3-teal w3-section w3-round-large w3-padding" type="submit" id="InnerLogin">Login</button>
+
+                      <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Remember me
+                      <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
+                  </div> -->
+                </form>
+
+            </div>
+        </div>
+        <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal w3-large" style="width:20%" id="login">Login</button>
+    </div>
+
+</body>
+</html>

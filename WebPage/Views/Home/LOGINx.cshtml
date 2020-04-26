@@ -1,0 +1,527 @@
+﻿@model WebPage120.Models.Class1
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>
+        MEDICURE
+    </title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="~/Content/w3.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="~/Content/Finale/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+<style>
+    body, h1, h2, h3, h4, h5 {
+        font-family: "Poppins", sans-serif
+    }
+
+    body {
+        font-size: 16px;
+    }
+
+    img {
+        margin-bottom: -8px;
+    }
+
+    .mySlides {
+        display: none;
+    }
+
+
+
+
+</style>
+</head>
+
+<body class="w3-content w3-black" style="max-width:1500px;">
+
+    <!--Nav bar-->
+
+
+    <div class="w3-top w3-teal">
+        <div class="w3-bar  w3-theme-d2 w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-opacity w3-large w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-large w3-hover-opacity w3-theme-d4"><i class="fa fa-hospital w3-text-white w3-margin-right"></i><b>MEDICURE</b> </a>
+            <a href="https://www.icmr.nic.in/" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-opacity" title="News"><i class="fa fa-globe w3-text-white"></i> MEDICAL UPDATES</a>
+            <!--<a href="#app" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-teal" title="MEDICURE"><i class="fa fa-plus w3-text-white"></i></a>-->
+            <div class="w3-dropdown-hover w3-hide-small">
+                <button class="w3-button w3-padding-large"><i class="fa fa-plus w3-text-white w3-hover-opacity"></i></button>
+                <div class="w3-dropdown-content w3-card-4 w3-bar-block" style="width:300px">
+                    <a href="#app" class="w3-bar-item w3-button w3-hover-teal">Login</a>
+                    <a href="#services" class="w3-bar-item w3-button">Services</a>
+                    <a href="#inventory" class="w3-bar-item w3-button">Inventory</a>
+                    <a href="#map" class="w3-bar-item w3-button">Location</a>
+                </div>
+            </div>
+            <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-opacity">CONTACT US</a>
+            <a href="#team" class="w3-bar-item w3-button w3-hide-small w3-right w3-padding-large w3-hover-opacity">PHYSICIANS</a>
+               
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Header with Slideshow -->
+
+
+
+
+  
+
+
+        <header class="w3-display-container w3-center" id="Home">
+            <button class="w3-button w3-block w3-green w3-hide-large w3-hide-medium">Know more about Medicure<i class="fa fa-heartbeat"></i></button>
+            <div class="mySlides w3-animate-opacity">
+                <img class="w3-image" src="~/Content/images/header.jpg" alt="Image 1" style="min-width:500px" width="1500" height="1000">
+                <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                    <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge">MEDICURE CLINIC</h1>
+                        <hr class="w3-opacity">
+                        <p>&ensp;World class hospitality</p>
+                        <button class="w3-bar-item w3-button w3-padding-large w3-hover-none w3-theme-d4"><i class=" w3-text-white w3-margin-right"></i>Know more about Medicure</button>
+                        <p><a href="#app" class="w3-button w3-block w3-green w3-round"><i class="fa fa-heartbeat"></i></a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-opacity">
+                <img class="w3-image" src="~/Content/images/drugstore1resized.jpg" alt="Image 2" style="min-width:500px" width="1500" height="1000">
+                <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                    <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge w3-text-red"><b>Drug Inventory</b></h1>
+                        <hr class="w3-opacity">
+                        <p></p>
+                        <p>&ensp;Best in class Drug Facility</p>
+                        <a href="#inventory" class="w3-bar-item w3-button w3-padding-large w3-hover-none w3-theme-d4"><i class=" w3-text-white w3-margin-right"></i>Inventory</a>
+
+                        <p><a href="#inventory" class="w3-button w3-block w3-red w3-round"> <i class="fa fa-heartbeat"></i></a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlides w3-animate-opacity">
+                <img class="w3-image" src="~/Content/images/bloodtestresized.jpg" alt="Image 3" style="min-width:500px" width="1500" height="1000">
+                <div class="w3-display-left w3-padding w3-hide-small" style="width:35%">
+                    <div class="w3-black w3-opacity w3-hover-opacity-off w3-padding-large w3-round-large">
+                        <h1 class="w3-xlarge">Friendly Staff</h1>
+                        <hr class="w3-opacity">
+                        <p>Live a Healthy Life</p>
+                        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-padding-large l w3-theme-d4"><i class=" w3-text-white w3-margin-right"></i>Services</a>
+
+                        <p><a href="#services" class="w3-button w3-block w3-indigo w3-round"> <i class="fa fa-heartbeat"></i> </a></p>
+                    </div>
+                </div>
+            </div>
+            <a class="w3-button w3-black w3-display-right w3-margin-right w3-round w3-hide-small w3-hover-light-grey" onclick="plusDivs(1)">WALK THROUGH &ensp;<i class="fa fa-angle-right"></i></a>
+            <a class="w3-button w3-block w3-black w3-hide-large w3-hide-medium" onclick="plusDivs(1)"> &ensp; <i class="fa fa-angle-right"></i></a>
+        </header>
+    
+
+
+
+    <!-- The App Section -->
+
+
+
+
+
+
+
+    <div class="w3-padding-64 w3-white" id="app">
+        <div class="w3-row-padding">
+            <div class="w3-col l8 m6">
+                <h1 class="w3-jumbo w3-text-teal"><b>MEDICURE</b></h1>
+                <h1 class="w3-xxlarge w3-text-green"><b></b></h1>
+                <p><span class="w3-xlarge" />The Medicure clinic website allow the patients to connect with the professional Doctors in order to recieve prescription or any query. All the users can get an access to the Drug Inventory to know about available medicines in the clinic pharmacy .</p>
+                <!--<button class="w3-button w3-light-grey w3-padding-large w3-section w3-hide-small" onclick="#">
+                     <i class="fa fa-user"></i>&ensp;LOGIN
+                 </button>-->
+            </div>
+            <div class="w3-col l4 m6">
+                <img src="~/Content/images/ESX_79gXcBU9WaL.jpg" class="w3-image w3-right w3-hide-small" width="335" height="471">
+                @*<div class="w3-center w3-hide-large w3-hide-medium">
+                    <button class="w3-button w3-block w3-padding-large" onclick="#">
+                        <i class="fa fa-login"></i> &ensp;LOGIN
+                    </button>
+
+                </div>*@
+            </div>
+
+
+
+
+
+
+            <!--EXTERNAL LOGIN-->
+
+
+
+
+
+
+            <div class="w3-container">
+
+                <div id="id01" class="w3-modal">
+                    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:500px">
+                        <div class="w3-center">
+                            <br>
+                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-red w3-xlarge w3-text-white w3-hover-text-red w3-hover-white  w3-display-topright">X</span>
+                            <img src="~/Content/Doctor/doc_avatar.png" alt="Avatar" style="width:30%" class="w3-circle w3-margin-top">
+                        </div>
+
+
+                        <div class="w3-section">
+
+                            @using (Html.BeginForm())
+                            {
+                                @Html.AntiForgeryToken()
+
+                                <div class="form-horizontal">
+                                    
+                                    <hr />
+                                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                                    <div class="form-group w3-center">
+                                        @Html.LabelFor(model => model.Username, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Username, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Username, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group w3-center">
+                                        @Html.LabelFor(model => model.Password, htmlAttributes: new { @class = "control-label col-md-2" })
+                                        <div class="col-md-10">
+                                            @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control" } })
+                                            @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group "style="margin-top:24px">
+                                        <div class="col-md-offset-2 col-md-10">
+                                            <input type="submit" value="Login" class="btn btn-default w3-center w3-block w3-button w3-teal" />
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                        </>
+
+                    </div>
+                </div>
+                <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-teal w3-large" style="width:20%" id="login">Login</button>
+            </div>
+
+
+
+
+
+            <!--External Login Ends-->
+
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="w3-padding-64 w3-light-grey">
+        <div class="w3-row-padding">
+            <div class="w3-col l4 m6">
+                <img class="w3-image w3-round-large w3-hide-small " src="~/Content/images/worldclass.jpg" alt="App" width="335" height="471">
+            </div>
+            <div class="w3-col l8 m6">
+                    <h1 class="w3-jumbo"><b>PROVIDES </b></h1>
+                    
+
+                    <marquee width="100%" direction="right" height="100px" scrollamount="20">
+                        <h1 class="w3-xxlarge w3-text-teal"><b>WORLD CLASS FACILITIES AND EQUIPMENT</b></h1>
+                    </marquee>
+</div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Features Section -->
+
+
+
+    <div class="w3-container w3-padding-64 w3-dark-grey w3-center" id="services">
+        
+        <h1 class="w3-jumbo"><b>SERVICES</b></h1>
+        <p class="w3-large">FEW OF MANY SERVICES WE PROVIDE </p>
+
+
+        <div class="w3-row" style="margin-top:64px">
+            <div class="w3-col s3">
+                <i class="fa fa-medkit w3-text-white w3-jumbo"></i>
+                <p>Diagnostic</p>
+            </div>
+            <div class="w3-col s3">
+                <i class="fa fa-heart w3-text-white w3-jumbo"></i>
+                <p>Heart</p>
+            </div>
+            <div class="w3-col s3">
+                <i class="fa fa-stethoscope w3-text-white w3-jumbo"></i>
+                <p>Clinical Test</p>
+            </div>
+            <div class="w3-col s3">
+                <i class="fa fa-heartbeat w3-text-white w3-jumbo"></i>
+                <p>Surgeries</p>
+            </div>
+        </div>
+
+        <div class="w3-row" style="margin-top:64px">
+            <div class="w3-col s3">
+                <i class="fa fa-apple-alt w3-text-white w3-jumbo"></i>
+                <p>Nutrition</p>
+            </div>
+            <div class="w3-col s3">
+                <i class="fa fa-user w3-text-white w3-jumbo"></i>
+                <p>Mental Health</p>
+            </div>
+            <div class="w3-col s3">
+                <i class="fa fa-thumbs-up w3-text-white w3-jumbo"></i>
+                <p>Prosthetic Devices</p>
+            </div>
+            <div class="w3-col s3">
+                <i class="fa fa-times-circle w3-text-white w3-jumbo"></i>
+                <p>24/7 Services</p>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <!-- Table View-->
+
+
+
+
+    <div class="w3-container w3-center w3-white " id="inventory">
+        <h1 class="w3-jumbo w3-center"><b>DRUG INVENTORY</b></h1>
+        <h4 class="w3-large w3-center"><b>GENERIC</b></h4>
+
+        <table class="w3-table-all w3-hoverable w3-center" >
+            <thead>
+                <tr class="w3-teal">
+                    <th>Drug Name</th>
+                    <th>Description</th>
+                    <th>Price per Strip</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>Crocin 500 Mg</td>
+                <td>500 mg</td>
+                <td>
+                    <b>&#8377</b>
+                    30.00
+                </td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Vicks Vaporub</td>
+                <td>Liniment 50 ml</td>
+                <td>
+                    <b>&#8377</b>
+                    123.50
+                </td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Avil</td>
+                <td>50 mg</td>
+                <td>
+                    <b>&#8377</b>
+                    10.00
+                </td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Safi Natural</td>
+                <td>Blood Purifier Syrup 500 ml</td>
+                <td> <b>&#8377</b> 180.00</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Gasex</td>
+                <td>100 mg</td>
+                <td> <b>&#8377</b> 108.00</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Cetrizine</td>
+                <td>25 mg</td>
+                <td> <b>&#8377</b> 12.00</td>
+                <td>Available</td>
+            <tr>
+                <td>Cardiafort</td>
+                <td>60 Capsules</td>
+                <td> <b>&#8377</b> 599.40</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Cod Liver Oil</td>
+                <td>110 Capsules</td>
+                <td> <b>&#8377</b> 277.15</td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Volini Spray</td>
+                <td>150 ml</td>
+                <td>
+                    <b>&#8377</b>
+                    130.00
+                </td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Digesense-D</td>
+                <td>30 tablets</td>
+                <td>
+                    <b>&#8377</b>
+                    299.40
+                </td>
+                <td>Available</td>
+            </tr>
+            <tr>
+                <td>Psyllium Husk Powder</td>
+                <td>200 gm</td>
+                <td>
+                    <b>&#8377</b>
+                    185.25
+                </td>
+                <td>Available</td>
+            </tr>
+        </table>
+
+
+        
+            <button class="w3-button w3-teal  w3-padding-large " onclick="#" style="padding:64px"> <i class="fa fa-plus"></i> Go to Drug Inventory </button>
+     
+    </div>
+
+
+
+
+
+    <!-- DOctors-->
+
+
+
+
+
+    <div>
+        <div class="w3-container w3-padding-64 w3-center w3-dark-gray" id="team">
+            <h2>OUR PHYSICIANS</h2>
+
+
+            <div class="w3-row">
+                <br>
+                <div class="w3-quarter">
+                    <img src="~/Content/Doctor/docto_Male.png" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                    <h3>Niladri Dey</h3>
+                    <p>Neurologist</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="~/Content/Doctor/doctor1.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                    <h3>Jaya Lakshmi</h3>
+                    <p>Surgeon</p>
+                </div>
+
+                <div class="w3-quarter">
+                    <img src="~/Content/Doctor/doctor_Male2.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                    <h3>Sandeep</h3>
+                    <p>Eye-Specialist</p>
+                </div>
+                <div class="w3-quarter">
+                    <img src="~/Content/Doctor/doctor2.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
+                    <h3>Sameera</h3>
+                    <p>Cardiogist</p>
+                </div>
+
+               
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Map-->
+
+    <div class="w3-light-grey"id="map">
+        
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30441.70840054296!2d78.34311505530924!3d17.497316509469815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb926bd87b3b93%3A0xda5461df89af2274!2sMedi%20Cure!5e0!3m2!1sen!2sin!4v1587902751236!5m2!1sen!2sin" width="1500" height="550" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" class="w3-card-4" tabindex="0"></iframe>
+    </div>
+
+
+    <!--Map DOne-->
+
+
+
+
+
+    <div w3-white >
+        <!-- Footer --> 
+        <footer class="w3-container w3-padding-32 w3-teal w3-center ">
+
+
+            <div class="w3-quater w3-xlarge">
+                <i class="fa fa-plus-square "></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-ambulance"></i>
+                <i class="fa fa-stethoscope "></i>
+            </div>
+            <p class="w3-medium">  <a href="#" class=" w3-button w3-xlarge w3-hover-none w3-block " style="font:14px;color:whitesmoke">MEDICURE CLINIC</a></p>
+            <p></p>
+            <p class="w3-medium">You have reached the end</p>
+            <a href="#" class="w3-hover-text-white w3-button w3-hover-none" style="font:20px"> GO TO TOP <i class="fa fa-arrow-up"></i></a>
+            <p class="w3-light-grey w3-text-dark-gray">&copy; @DateTime.Now.Year - WE - 5</p>
+            <p></p>
+        </footer>
+    </div>
+
+
+    <!--Java Script-->
+
+            <script>
+                // Slideshow
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("mySlides");
+                    if (n > x.length) { slideIndex = 1 }
+                    if (n < 1) { slideIndex = x.length }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                }
+            </script>
+
+</body>
+</html>
+

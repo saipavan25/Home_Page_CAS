@@ -1,0 +1,121 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+
+    <link href="~/Content/w3.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="~/Content/Finale/fontawesome-free-5.13.0-web/css/all.css" rel="stylesheet" />
+
+
+
+    <style>
+        html, body, h1, h2, h3, h4, h5, h6 {
+            font-family: Arial,sans-serif;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- <form id="form1" runat="server">
+
+         Side Bar -->
+
+
+
+    <div class="w3-sidebar w3-bar-block w3-card-4 w3-mobile w3-light-grey" style="width:20%">
+        <div class="w3-card-4 w3-light-grey">
+            <div class="w3-container w3-center">
+                <h3>   </h3>
+                <img src="~/Content/avatar2.png" alt="Person" class="  w3-image w3-hover-opacity w3-card-4" style="width:80%">
+                <h3 class="w3-bar-block ">Doctor</h3>
+                <button class="w3-button w3-dark-gray  w3-small w3-rightbar w3-right w3-margin w3-round-xxlarge w3-hover-teal">Edit Profile</button>
+            </div>
+        </div>
+
+        <a href="#" class="w3-bar-item w3-white w3-card-4 w3-hover-light-grey"></a>
+        <a href="https://www.Facebook.com/" class="w3-bar-item  w3-large w3-button w3-hover-teal">
+            Dashboard
+        </a>
+        <a href="#" class="w3-bar-item w3-large w3-button w3-hover-teal">
+            Messages
+        </a>
+        <a href="#" class="w3-bar-item w3-large w3-button w3-hover-teal">
+            Patients
+        </a>
+        <a href="#" class="w3-bar-item w3-large w3-button w3-hover-teal">
+            Patient Records
+        </a>
+        <a href="#" class="w3-bar-item w3-large w3-button w3-hover-teal">
+            Inventory
+        </a>
+        <a href="#" class="w3-bar-item w3-large w3-button w3-hover-teal">
+            Orders
+        </a>
+
+    </div>
+
+
+
+
+    <!--Side Bar Ends-->
+
+
+
+
+
+    <div style="margin-left:21%">
+        <!--applies to all right content-->
+        <!-- navigation bar-->
+
+        <div class="w3-bar w3-mobile w3-teal w3-card-2 w3-bottombar w3-panel w3-large">
+
+            <a href="#" class="w3-bar-item w3-button w3-xlarge w3-text-white w3-hover-black" style="background-color:#186356">
+                <i class="fa fa-hospital w3-xlarge"></i>
+            </a>
+            <a href="http://www.dpmuhry.gov.in/" class=" w3-padding-16 w3-button w3-large w3-hover-none w3-hover-text-white">MEDICURE</a>
+            <a href="#" class="w3-padding-16 w3-button w3-right w3-large w3-hover-opacity">Know more about us</a>
+
+            <!-- Modal Ends-->
+            <!--DropDown Menu-->
+
+            <div class="w3-dropdown-hover w3-right ">
+                <button class="w3-button w3-xlarge w3-hover-opacity">
+                    <i class="fa fa-user"></i>
+                    <i class="fas fa-caret-down "></i>
+                </button>
+                <div class="w3-medium w3-dropdown-content w3-bar-block w3-card-4 " style="width:15%">
+                    <a href="#" class="w3-bar-item w3-button">Contact Us</a>
+                    <a href="#" class="w3-bar-item w3-button">About Us</a>
+                    <a href="#" class="w3-bar-item w3-button w3-hover-red">Log Out</a>
+                </div>
+            </div>
+
+            <!--DropDown Menu Ends-->
+
+        </div>
+
+
+        <!-- Navigation ends-->
+        <!-- Real Place Holder -->
+
+        <div class="w3-container w3-card-4">
+            <a href="https://www.worldometers.info/coronavirus/" target="_blank" class="w3-button w3-teal w3-right w3-hover-opacity w3-right">COVID-19 UPDATES</a>
+
+            @RenderBody()
+        </div>
+        <footer>
+            <p class="w3-bar w3-small w3-teal w3-center">&copy; @DateTime.Now.Year - All Copyrights - WE5</p>
+        </footer>
+    </div>
+    <!--Ends here-->
+
+    <!--</form>-->
+</body>
+</html>
